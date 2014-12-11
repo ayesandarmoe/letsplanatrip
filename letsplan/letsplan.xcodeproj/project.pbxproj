@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		130864B31A37D74E000F8005 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130864B21A37D74E000F8005 /* AddTripViewController.swift */; };
+		1335B1631A3789E3003079EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335B1621A3789E3003079EF /* AppDelegate.swift */; };
+		1335B1661A3789E3003079EF /* letsplan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1335B1641A3789E3003079EF /* letsplan.xcdatamodeld */; };
+		1335B1681A3789E3003079EF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335B1671A3789E3003079EF /* MasterViewController.swift */; };
+		1335B16A1A3789E3003079EF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335B1691A3789E3003079EF /* DetailViewController.swift */; };
+		1335B16D1A3789E3003079EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1335B16B1A3789E3003079EF /* Main.storyboard */; };
+		1335B16F1A3789E3003079EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1335B16E1A3789E3003079EF /* Images.xcassets */; };
+		1335B1721A3789E3003079EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1335B1701A3789E3003079EF /* LaunchScreen.xib */; };
+		1335B17E1A3789E3003079EF /* letsplanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335B17D1A3789E3003079EF /* letsplanTests.swift */; };
+		136830FA1A38D2E1009C0172 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136830F91A38D2E1009C0172 /* DismissSegue.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1335B1781A3789E3003079EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1335B1551A3789E2003079EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1335B15C1A3789E3003079EF;
+			remoteInfo = letsplan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		130864B21A37D74E000F8005 /* AddTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		1335B15D1A3789E3003079EF /* letsplan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letsplan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1335B1611A3789E3003079EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1335B1621A3789E3003079EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1335B1651A3789E3003079EF /* letsplan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = letsplan.xcdatamodel; sourceTree = "<group>"; };
+		1335B1671A3789E3003079EF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		1335B1691A3789E3003079EF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1335B16C1A3789E3003079EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1335B16E1A3789E3003079EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1335B1711A3789E3003079EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1335B1771A3789E3003079EF /* letsplanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = letsplanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1335B17C1A3789E3003079EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1335B17D1A3789E3003079EF /* letsplanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsplanTests.swift; sourceTree = "<group>"; };
+		136830F91A38D2E1009C0172 /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DismissSegue.swift; path = ../../../Task/Task/DismissSegue.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1335B15A1A3789E3003079EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1335B1741A3789E3003079EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1335B1541A3789E2003079EF = {
+			isa = PBXGroup;
+			children = (
+				1335B15F1A3789E3003079EF /* letsplan */,
+				1335B17A1A3789E3003079EF /* letsplanTests */,
+				1335B15E1A3789E3003079EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1335B15E1A3789E3003079EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1335B15D1A3789E3003079EF /* letsplan.app */,
+				1335B1771A3789E3003079EF /* letsplanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1335B15F1A3789E3003079EF /* letsplan */ = {
+			isa = PBXGroup;
+			children = (
+				136830F91A38D2E1009C0172 /* DismissSegue.swift */,
+				1335B1621A3789E3003079EF /* AppDelegate.swift */,
+				1335B1671A3789E3003079EF /* MasterViewController.swift */,
+				1335B1691A3789E3003079EF /* DetailViewController.swift */,
+				1335B16B1A3789E3003079EF /* Main.storyboard */,
+				130864B21A37D74E000F8005 /* AddTripViewController.swift */,
+				1335B16E1A3789E3003079EF /* Images.xcassets */,
+				1335B1701A3789E3003079EF /* LaunchScreen.xib */,
+				1335B1641A3789E3003079EF /* letsplan.xcdatamodeld */,
+				1335B1601A3789E3003079EF /* Supporting Files */,
+			);
+			path = letsplan;
+			sourceTree = "<group>";
+		};
+		1335B1601A3789E3003079EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1335B1611A3789E3003079EF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1335B17A1A3789E3003079EF /* letsplanTests */ = {
+			isa = PBXGroup;
+			children = (
+				1335B17D1A3789E3003079EF /* letsplanTests.swift */,
+				1335B17B1A3789E3003079EF /* Supporting Files */,
+			);
+			path = letsplanTests;
+			sourceTree = "<group>";
+		};
+		1335B17B1A3789E3003079EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1335B17C1A3789E3003079EF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1335B15C1A3789E3003079EF /* letsplan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1335B1811A3789E3003079EF /* Build configuration list for PBXNativeTarget "letsplan" */;
+			buildPhases = (
+				1335B1591A3789E3003079EF /* Sources */,
+				1335B15A1A3789E3003079EF /* Frameworks */,
+				1335B15B1A3789E3003079EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = letsplan;
+			productName = letsplan;
+			productReference = 1335B15D1A3789E3003079EF /* letsplan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1335B1761A3789E3003079EF /* letsplanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1335B1841A3789E3003079EF /* Build configuration list for PBXNativeTarget "letsplanTests" */;
+			buildPhases = (
+				1335B1731A3789E3003079EF /* Sources */,
+				1335B1741A3789E3003079EF /* Frameworks */,
+				1335B1751A3789E3003079EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1335B1791A3789E3003079EF /* PBXTargetDependency */,
+			);
+			name = letsplanTests;
+			productName = letsplanTests;
+			productReference = 1335B1771A3789E3003079EF /* letsplanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1335B1551A3789E2003079EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Aye Moe";
+				TargetAttributes = {
+					1335B15C1A3789E3003079EF = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					1335B1761A3789E3003079EF = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 1335B15C1A3789E3003079EF;
+					};
+				};
+			};
+			buildConfigurationList = 1335B1581A3789E2003079EF /* Build configuration list for PBXProject "letsplan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1335B1541A3789E2003079EF;
+			productRefGroup = 1335B15E1A3789E3003079EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1335B15C1A3789E3003079EF /* letsplan */,
+				1335B1761A3789E3003079EF /* letsplanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1335B15B1A3789E3003079EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1335B16D1A3789E3003079EF /* Main.storyboard in Resources */,
+				1335B1721A3789E3003079EF /* LaunchScreen.xib in Resources */,
+				1335B16F1A3789E3003079EF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1335B1751A3789E3003079EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1335B1591A3789E3003079EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				130864B31A37D74E000F8005 /* AddTripViewController.swift in Sources */,
+				1335B1661A3789E3003079EF /* letsplan.xcdatamodeld in Sources */,
+				1335B1631A3789E3003079EF /* AppDelegate.swift in Sources */,
+				1335B1681A3789E3003079EF /* MasterViewController.swift in Sources */,
+				136830FA1A38D2E1009C0172 /* DismissSegue.swift in Sources */,
+				1335B16A1A3789E3003079EF /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1335B1731A3789E3003079EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1335B17E1A3789E3003079EF /* letsplanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1335B1791A3789E3003079EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1335B15C1A3789E3003079EF /* letsplan */;
+			targetProxy = 1335B1781A3789E3003079EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1335B16B1A3789E3003079EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1335B16C1A3789E3003079EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1335B1701A3789E3003079EF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1335B1711A3789E3003079EF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1335B17F1A3789E3003079EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1335B1801A3789E3003079EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1335B1821A3789E3003079EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = letsplan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1335B1831A3789E3003079EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = letsplan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1335B1851A3789E3003079EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = letsplanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/letsplan.app/letsplan";
+			};
+			name = Debug;
+		};
+		1335B1861A3789E3003079EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = letsplanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/letsplan.app/letsplan";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1335B1581A3789E2003079EF /* Build configuration list for PBXProject "letsplan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1335B17F1A3789E3003079EF /* Debug */,
+				1335B1801A3789E3003079EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1335B1811A3789E3003079EF /* Build configuration list for PBXNativeTarget "letsplan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1335B1821A3789E3003079EF /* Debug */,
+				1335B1831A3789E3003079EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1335B1841A3789E3003079EF /* Build configuration list for PBXNativeTarget "letsplanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1335B1851A3789E3003079EF /* Debug */,
+				1335B1861A3789E3003079EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1335B1641A3789E3003079EF /* letsplan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1335B1651A3789E3003079EF /* letsplan.xcdatamodel */,
+			);
+			currentVersion = 1335B1651A3789E3003079EF /* letsplan.xcdatamodel */;
+			path = letsplan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1335B1551A3789E2003079EF /* Project object */;
+}
