@@ -11,18 +11,27 @@ import UIKit
 class AddTripViewController: UIViewController {
 
     @IBOutlet weak var tripNameField: UITextField!
-    @IBOutlet weak var pickDateField: UIDatePicker!
-    @IBOutlet weak var startDateBtnField: UIButton!
-    @IBOutlet weak var endDateBtnField: UIButton!
+    @IBOutlet weak var startDateBtnField: UIButton! //start date of the trip
+    @IBOutlet weak var endDateBtnField: UIButton! //end date of the trip
     
+    @IBOutlet weak var datePicker: UIDatePicker!
+    //this button is called after a date is selected
+    @IBOutlet weak var doneBtn: UIBarButtonItem!
+    
+    //date picker view contain date picker and a tool bar
+    @IBOutlet weak var datePickerView: UIView!
+    
+    @IBOutlet weak var testLabel: UILabel!
     var selectedStartDate: NSDate!
     var selectedEndDate: NSDate!
-    var dateFormatter: NSDateFormatter!
+    var dateFormatter = NSDateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //self.datePicker.hidden = true
+        self.datePickerView.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,14 +40,23 @@ class AddTripViewController: UIViewController {
     }
     
     @IBAction func startDateBtnClicked(sender: AnyObject) {
-        self.pickDateField.hidden = false
+        self.hideDatePickerView(false)
+    }
+    
+    @IBAction func endDateBtnClicked(sender: AnyObject) {
+        self.hideDatePickerView(false)
     }
 
-    @IBAction func doneSelectingDate(sender: AnyObject) {
-        self.selectedStartDate = self.pickDateField.date
-        self.pickDateField.hidden = true
-        self.startDateBtnField.setTitle(self.selectedStartDate.description, forState: nil)
+    @IBAction func doneSelectingDate(sender: UIDatePicker) {
         
+        self.dateFormatter.dateFormat = "MMM-dd-yyyy"
+        self.hideDatePickerView(true)
+        let date = self.dateFormatter.stringFromDate(self.datePicker.date)
+        self.startDateBtnField.setTitle(date, forState: nil)
+    }
+   
+    func hideDatePickerView(hideView: Bool) {
+        self.datePickerView.hidden = hideView
     }
 
     /*
