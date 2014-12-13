@@ -189,7 +189,7 @@
                                             <!--2014-12-11 04:00:38 +0000-->
                                         </date>
                                     </datePicker>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-YS-2zk">
+                                    <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-YS-2zk">
                                         <rect key="frame" x="0.0" y="78" width="320" height="44"/>
                                         <items>
                                             <barButtonItem systemItem="done" id="VdS-s3-vyz">
@@ -197,7 +197,9 @@
                                                     <action selector="doneSelectingDate:" destination="V5Y-B7-MEu" id="POb-NN-0Bc"/>
                                                 </connections>
                                             </barButtonItem>
+                                            <barButtonItem systemItem="cancel" id="3uN-f7-jt6"/>
                                         </items>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                     </toolbar>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -247,6 +249,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="cancelDateBtn" destination="3uN-f7-jt6" id="QM6-0Y-tzB"/>
                         <outlet property="datePicker" destination="rBz-oX-56O" id="8sC-h2-Gpr"/>
                         <outlet property="datePickerView" destination="4Dy-S2-cQc" id="Uni-6J-zDV"/>
                         <outlet property="doneBtn" destination="VdS-s3-vyz" id="9WE-SS-1hs"/>
@@ -291,7 +294,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gS8-w0-te8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="f0N-em-YhS">
+                <searchDisplayController id="f0N-em-YhS" customClass="LocationViewController" customModule="letsplan" customModuleProvider="target">
                     <connections>
                         <outlet property="delegate" destination="1FT-GN-6pc" id="gPU-2m-GQt"/>
                         <outlet property="searchBar" destination="zl6-Tc-b3d" id="oO3-yl-CWh"/>

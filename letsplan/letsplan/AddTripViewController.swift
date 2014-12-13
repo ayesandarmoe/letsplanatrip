@@ -18,12 +18,12 @@ class AddTripViewController: UIViewController {
     //this button is called after a date is selected
     @IBOutlet weak var doneBtn: UIBarButtonItem!
     
+    @IBOutlet weak var cancelDateBtn: UIBarButtonItem!
+    @IBOutlet weak var clearDateBtn: UIBarButtonItem!
     //date picker view contain date picker and a tool bar
     @IBOutlet weak var datePickerView: UIView!
     
-    @IBOutlet weak var testLabel: UILabel!
-    var selectedStartDate: NSDate!
-    var selectedEndDate: NSDate!
+    var selectedBtn = String()
     var dateFormatter = NSDateFormatter()
     
     override func viewDidLoad() {
@@ -41,23 +41,49 @@ class AddTripViewController: UIViewController {
     
     @IBAction func startDateBtnClicked(sender: AnyObject) {
         self.hideDatePickerView(false)
+        self.selectedBtn = "Start"
     }
     
     @IBAction func endDateBtnClicked(sender: AnyObject) {
         self.hideDatePickerView(false)
+        self.selectedBtn = "End"
     }
 
     @IBAction func doneSelectingDate(sender: UIDatePicker) {
-        
-        self.dateFormatter.dateFormat = "MMM-dd-yyyy"
-        self.hideDatePickerView(true)
-        let date = self.dateFormatter.stringFromDate(self.datePicker.date)
-        self.startDateBtnField.setTitle(date, forState: nil)
+        if (self.selectedBtn == "Start") {
+            self.doneSelectingDate(self.datePicker.date, btn: self.startDateBtnField)
+        }
+        else if (self.selectedBtn == "End"){
+            self.doneSelectingDate(self.datePicker.date, btn: self.endDateBtnField)
+        }
+        else{
+            
+        }
     }
    
+    
     func hideDatePickerView(hideView: Bool) {
         self.datePickerView.hidden = hideView
     }
+    
+    func doneSelectingDate(date: NSDate, btn: UIButton) {
+        self.dateFormatter.dateFormat = "MMM dd, yyyy"
+        self.hideDatePickerView(true)
+        let date = self.dateFormatter.stringFromDate(date)
+        btn.setTitle(date, forState: nil)
+        
+    }
+    
+    @IBAction func cancelDateSelection(sender: AnyObject) {
+        self.hideDatePickerView(true)
+    }
+    
+    /**
+    **/
+    func clearDateSelection(date:NSDate, btn:UIButton) {
+        btn.setTitle("Select Date>", forState: nil)
+    }
+    
 
     /*
     // MARK: - Navigation
