@@ -16,10 +16,10 @@
 		1335B16F1A3789E3003079EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1335B16E1A3789E3003079EF /* Images.xcassets */; };
 		1335B1721A3789E3003079EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1335B1701A3789E3003079EF /* LaunchScreen.xib */; };
 		1335B17E1A3789E3003079EF /* letsplanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335B17D1A3789E3003079EF /* letsplanTests.swift */; };
-		139FBC9F1A3B7829005AEB70 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139FBC9E1A3B7829005AEB70 /* Trip.swift */; };
 		139FBCA11A3B782C005AEB70 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139FBCA01A3B782C005AEB70 /* Location.swift */; };
 		139FBCA51A3B7A4F005AEB70 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139FBCA41A3B7A4F005AEB70 /* LocationViewController.swift */; };
 		139FBCA71A3CE33D005AEB70 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139FBCA61A3CE33D005AEB70 /* DismissSegue.swift */; };
+		ECA921451A3D02550029F009 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA921441A3D02550029F009 /* Trip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +46,10 @@
 		1335B1771A3789E3003079EF /* letsplanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = letsplanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1335B17C1A3789E3003079EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1335B17D1A3789E3003079EF /* letsplanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsplanTests.swift; sourceTree = "<group>"; };
-		139FBC9E1A3B7829005AEB70 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		139FBCA01A3B782C005AEB70 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		139FBCA41A3B7A4F005AEB70 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationViewController.swift; path = ../LocationViewController.swift; sourceTree = "<group>"; };
 		139FBCA61A3CE33D005AEB70 /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		ECA921441A3D02550029F009 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,9 @@
 				1335B1701A3789E3003079EF /* LaunchScreen.xib */,
 				1335B1641A3789E3003079EF /* letsplan.xcdatamodeld */,
 				139FBCA01A3B782C005AEB70 /* Location.swift */,
-				139FBC9E1A3B7829005AEB70 /* Trip.swift */,
 				1335B1601A3789E3003079EF /* Supporting Files */,
 				139FBCA61A3CE33D005AEB70 /* DismissSegue.swift */,
+				ECA921441A3D02550029F009 /* Trip.swift */,
 			);
 			path = letsplan;
 			sourceTree = "<group>";
@@ -236,10 +236,10 @@
 				130864B31A37D74E000F8005 /* AddTripViewController.swift in Sources */,
 				1335B1661A3789E3003079EF /* letsplan.xcdatamodeld in Sources */,
 				139FBCA11A3B782C005AEB70 /* Location.swift in Sources */,
+				ECA921451A3D02550029F009 /* Trip.swift in Sources */,
 				1335B1631A3789E3003079EF /* AppDelegate.swift in Sources */,
 				1335B1681A3789E3003079EF /* MasterViewController.swift in Sources */,
 				139FBCA51A3B7A4F005AEB70 /* LocationViewController.swift in Sources */,
-				139FBC9F1A3B7829005AEB70 /* Trip.swift in Sources */,
 				139FBCA71A3CE33D005AEB70 /* DismissSegue.swift in Sources */,
 				1335B16A1A3789E3003079EF /* DetailViewController.swift in Sources */,
 			);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcT-CQ-hti">
-                                <rect key="frame" x="11" y="77" width="100" height="21"/>
+                                <rect key="frame" x="11" y="77" width="100" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="bN8-hu-QcH"/>
                                 </constraints>
@@ -128,13 +128,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-xu-yfM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-xu-yfM">
                                 <rect key="frame" x="11" y="121" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqm-Kj-c7v">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="End" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqm-Kj-c7v">
                                 <rect key="frame" x="11" y="164" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -145,32 +145,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where you want to go?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAB-9n-bMy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Where you want to go?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAB-9n-bMy">
                                 <rect key="frame" x="11" y="210" width="178" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wv2-OR-hI4">
-                                <rect key="frame" x="211" y="117" width="93" height="30"/>
-                                <state key="normal" title="Select Date &gt;">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="startDateBtnClicked:" destination="V5Y-B7-MEu" eventType="touchUpInside" id="SzJ-Uu-fFU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb5-P9-r1l">
-                                <rect key="frame" x="211" y="155" width="93" height="30"/>
-                                <state key="normal" title="Select Date &gt;">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="endDateBtnClicked:" destination="V5Y-B7-MEu" eventType="touchUpInside" id="Muh-xP-QXb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZU-4A-wBa">
-                                <rect key="frame" x="282" y="210" width="22" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZU-4A-wBa">
+                                <rect key="frame" x="289" y="210" width="22" height="22"/>
                                 <accessibility key="accessibilityConfiguration" label="Add"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,45 +162,31 @@
                                     <segue destination="1FT-GN-6pc" kind="push" identifier="showAddLocation" id="PCk-tg-cmP"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Dy-S2-cQc">
-                                <rect key="frame" x="0.0" y="284" width="320" height="278"/>
-                                <subviews>
-                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rBz-oX-56O">
-                                        <rect key="frame" x="0.0" y="122" width="320" height="162"/>
-                                        <date key="date" timeIntervalSinceReferenceDate="439963238.82938498">
-                                            <!--2014-12-11 04:00:38 +0000-->
-                                        </date>
-                                    </datePicker>
-                                    <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-YS-2zk">
-                                        <rect key="frame" x="0.0" y="78" width="320" height="44"/>
-                                        <items>
-                                            <barButtonItem systemItem="done" id="VdS-s3-vyz">
-                                                <connections>
-                                                    <action selector="doneSelectingDate:" destination="V5Y-B7-MEu" id="POb-NN-0Bc"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem systemItem="cancel" id="3uN-f7-jt6"/>
-                                        </items>
-                                        <color key="tintColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
-                                    </toolbar>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmP-v6-uGp">
+                                <rect key="frame" x="176" y="121" width="128" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="startDateTextFieldTap:" destination="V5Y-B7-MEu" eventType="touchDown" id="df3-q7-FhN"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3z-NO-ZXb">
+                                <rect key="frame" x="176" y="160" width="128" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="endDateTextFieldTap:" destination="V5Y-B7-MEu" eventType="touchDown" id="RgR-Qk-0RV"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="qb5-P9-r1l" firstAttribute="bottom" secondItem="Qqm-Kj-c7v" secondAttribute="bottom" id="4GP-1u-Zbh"/>
                             <constraint firstItem="Qqm-Kj-c7v" firstAttribute="leading" secondItem="fAB-9n-bMy" secondAttribute="leading" id="4xV-Yc-wen"/>
-                            <constraint firstItem="HnY-2F-3mH" firstAttribute="trailing" secondItem="wv2-OR-hI4" secondAttribute="trailing" id="8MH-0o-6wp"/>
                             <constraint firstItem="HnY-2F-3mH" firstAttribute="trailing" secondItem="KuH-EX-KLe" secondAttribute="trailingMargin" id="Ar6-x6-FN4"/>
-                            <constraint firstItem="qb5-P9-r1l" firstAttribute="top" secondItem="wv2-OR-hI4" secondAttribute="bottom" constant="8" symbolic="YES" id="B3X-hn-01Z"/>
                             <constraint firstItem="Qqm-Kj-c7v" firstAttribute="leading" secondItem="QfC-xu-yfM" secondAttribute="leading" id="BHQ-h5-vNf"/>
-                            <constraint firstItem="wv2-OR-hI4" firstAttribute="baseline" secondItem="QfC-xu-yfM" secondAttribute="baseline" id="Jfs-tN-bEa"/>
                             <constraint firstItem="EZU-4A-wBa" firstAttribute="trailing" secondItem="KuH-EX-KLe" secondAttribute="trailingMargin" id="KUc-We-Agr"/>
-                            <constraint firstItem="wv2-OR-hI4" firstAttribute="top" secondItem="HnY-2F-3mH" secondAttribute="bottom" constant="13" id="Nwk-Rt-zFc"/>
                             <constraint firstItem="HnY-2F-3mH" firstAttribute="baseline" secondItem="vcT-CQ-hti" secondAttribute="baseline" id="Rhn-v1-gu6"/>
-                            <constraint firstItem="wv2-OR-hI4" firstAttribute="leading" secondItem="qb5-P9-r1l" secondAttribute="leading" id="SFL-xs-gSa"/>
                             <constraint firstItem="HnY-2F-3mH" firstAttribute="top" secondItem="vb8-1X-A0F" secondAttribute="bottom" constant="10" id="YtV-sB-2aK"/>
                             <constraint firstItem="fAB-9n-bMy" firstAttribute="top" secondItem="EZU-4A-wBa" secondAttribute="top" id="dPJ-So-66N"/>
                             <constraint firstItem="EZU-4A-wBa" firstAttribute="leading" secondItem="fAB-9n-bMy" secondAttribute="trailing" constant="93" id="iei-Ky-0rM"/>
@@ -226,7 +194,6 @@
                             <constraint firstItem="HnY-2F-3mH" firstAttribute="leading" secondItem="vcT-CQ-hti" secondAttribute="trailing" constant="1" id="mZI-jj-bjI"/>
                             <constraint firstItem="EZU-4A-wBa" firstAttribute="trailing" secondItem="KuH-EX-KLe" secondAttribute="trailingMargin" id="rgD-e3-YOk"/>
                             <constraint firstItem="QfC-xu-yfM" firstAttribute="trailing" secondItem="Qqm-Kj-c7v" secondAttribute="trailing" id="u56-yU-QCv"/>
-                            <constraint firstItem="EZU-4A-wBa" firstAttribute="top" secondItem="qb5-P9-r1l" secondAttribute="bottom" constant="25" id="wry-MR-VCk"/>
                             <constraint firstItem="vcT-CQ-hti" firstAttribute="leading" secondItem="KuH-EX-KLe" secondAttribute="leadingMargin" constant="-5" id="xD6-zx-tzR"/>
                             <constraint firstItem="QfC-xu-yfM" firstAttribute="trailing" secondItem="vcT-CQ-hti" secondAttribute="trailing" id="zSA-pN-7fW"/>
                         </constraints>
@@ -249,12 +216,8 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="cancelDateBtn" destination="3uN-f7-jt6" id="QM6-0Y-tzB"/>
-                        <outlet property="datePicker" destination="rBz-oX-56O" id="8sC-h2-Gpr"/>
-                        <outlet property="datePickerView" destination="4Dy-S2-cQc" id="Uni-6J-zDV"/>
-                        <outlet property="doneBtn" destination="VdS-s3-vyz" id="9WE-SS-1hs"/>
-                        <outlet property="endDateBtnField" destination="qb5-P9-r1l" id="6Lu-jU-qBh"/>
-                        <outlet property="startDateBtnField" destination="wv2-OR-hI4" id="uMn-q9-5qw"/>
+                        <outlet property="endDateTextField" destination="o3z-NO-ZXb" id="ltK-lo-nfz"/>
+                        <outlet property="startDateTextField" destination="gmP-v6-uGp" id="HaF-Uj-3oU"/>
                         <outlet property="tripNameField" destination="HnY-2F-3mH" id="ukf-3M-vYY"/>
                     </connections>
                 </viewController>
@@ -313,6 +276,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="AA6-AG-Z7A"/>
+        <segue reference="Rsa-lu-MGH"/>
     </inferredMetricsTieBreakers>
 </document>
